@@ -54,12 +54,12 @@ textarea:focus {
 
 #buttons {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 
 .preset-button {
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     padding: 10px;
     background-color: #A8DADC;
 }
@@ -67,7 +67,7 @@ textarea:focus {
 #radio-buttons {
     background-color: #E8C491;
     text-align: center;
-    margin: 5px auto;
+    margin-top: -20px;
     padding: 10px;
 }
 
@@ -112,7 +112,7 @@ button:focus {
 }
 
 #analyze {
-    margin: 20px auto;
+    margin: 30px auto;
     height: 50px;
     width: 100px;
 }
