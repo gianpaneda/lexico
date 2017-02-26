@@ -60,13 +60,15 @@ window.onload = function() {
             wordLengths.forEach(function(element, index) {
                 if (wordLengthCount[wordLengths[index]]) {
                     wordLengthCount[wordLengths[index]]++;
-
                 } else {
                     wordLengthCount[wordLengths[index]] = 1;
                 }
             });
 
-            let lengthFreq = Object.values(wordLengthCount);
+            let lengthFreq = Object.keys(wordLengthCount).map(function(key) {
+                return wordLengthCount[key];
+            });
+
             let differentLengths = Object.keys(wordLengthCount); //arr
 
             lengthFreq.forEach(function(element, index) {
