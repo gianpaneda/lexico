@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Ubuntu);
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Helvetica";
+    color: #313131;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: 'Ubuntu';
+    background: #FFD79F;
+}
+
+textarea {
+    background-color: #ECECEC;
+    resize: none;
+    display: block;
+    margin: 5px auto;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    height: 50px;
+    max-width: 90%;
+    border: none;
+    transition: all .3s;
+}
+
+textarea:focus {
+    outline: none;
+    height: 250px;
+    transform: scale(1.02);
+}
+
+#stats-flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stats {
+    text-align: center;
+    padding: 0px 15px 0px 5px;
+    margin: 0px 15px 10px 15px;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    color: #313131;
+}
+
+#buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.selected {
+    background-color: red;
+}
+
+.not-selected {
+    background-color: blue;
+}
+
+.preset-button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #A8DADC;
+}
+
+#radio-buttons {
+    background-color: #E8C491;
+    text-align: center;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.center-left-align {
+    display: inline-block;
+    text-align: left;
+    /*margin: 0 auto;*/
+}
+
+button {
+    width: 200px;
+    font-size: 18px;
+    border-style: none;
+    background-color: #E84B56;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+button:hover {
+    -webkit-box-shadow: 1px 5px 10px 1px rgba(92, 92, 92, 1);
+    -moz-box-shadow: 1px 5px 10px 1px rgba(92, 92, 92, 1);
+    box-shadow: 1px 5px 10px 1px rgba(92, 92, 92, 1);
+}
+
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#commonWords {
+    margin-top: -5px
+}
+
+#wordLengths {
+    margin-top: 450px
+}
+
+#analyze {
+    margin: 20px auto;
+    height: 50px;
+    width: 100px;
+}
+
+#table-flex-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#rawData, #uniqueWords {
+    margin: 420px auto;
+}
+
+#uniqueWords {
+    width: 35%;
+    /*margin-left: -100px;*/
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    color: #313131;
+    background-color: #FFD79F;
+    width: 35%;
+    transition: all .3s;
+}
+
+table, td, th {
+    border: none;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:first-child {
+    font-family: "Helvetica";
+    background-color: #457B9D;
+    color: #ECECEC;
+    font-size: 24px;
+}
+
+tr:nth-child(even) {
+    background-color: #E8C491
+}
+
+.chartContainer {
+    height: 100%;
+    max-height: 800px;
+    /*margin: 0px auto;*/
+}
+
+@media (max-width: 1000px) {
+    tr:first-child {
+        font-size: 16px;
+    }
+    .stats {
+        text-align: left;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #stats-flex-container {
+        flex-direction: column;
+    }
+    #table-flex-container {
+        flex-direction: column;
+    }
+    #rawData, #uniqueWords {
+        width: 100%;
+    }
+    #uniqueWords {
+        margin-top: -390px;
+    }
+}
