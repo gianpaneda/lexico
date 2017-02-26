@@ -46,7 +46,7 @@ textarea:focus {
 .stats {
     text-align: center;
     padding: 0px 15px 0px 5px;
-    margin: 0px 15px 10px 15px;
+    margin: 0px 15px 5px 15px;
     font-family: 'Ubuntu';
     font-size: 20px;
     color: #313131;
@@ -57,13 +57,6 @@ textarea:focus {
     margin-bottom: 20px;
 }
 
-.selected {
-    background-color: red;
-}
-
-.not-selected {
-    background-color: blue;
-}
 
 .preset-button {
     margin: 10px;
@@ -86,7 +79,8 @@ textarea:focus {
 
 button {
     width: 200px;
-    font-size: 18px;
+    height: 70px;
+    font-size: 16px;
     border-style: none;
     background-color: #E84B56;
     -webkit-transition: all .2s;
@@ -173,19 +167,6 @@ tr:nth-child(even) {
     /*margin: 0px auto;*/
 }
 
-@media (max-width: 1000px) {
-    tr:first-child {
-        font-size: 16px;
-    }
-    .stats {
-        text-align: left;
-        font-size: 16px;
-    }
-    h1 {
-        font-size: 32px;
-    }
-}
-
 @media (max-width: 1200px) {
     #stats-flex-container {
         flex-direction: column;
@@ -194,9 +175,37 @@ tr:nth-child(even) {
         flex-direction: column;
     }
     #rawData, #uniqueWords {
-        width: 100%;
+        width: 80%;
     }
     #uniqueWords {
         margin-top: -390px;
+    }
+}
+
+@media (max-width: 1000px) {
+    tr:first-child {
+        font-size: 18px;
+    }
+    tr {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .preset-button {
+        font-size: 14px;
+    }
+    tr:first-child {
+        font-size: 12px;
+    }
+    tr {
+        font-size: 12px;
+    }
+    .stats {
+        text-align: left;
+        font-size: 16px;
     }
 }
