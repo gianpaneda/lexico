@@ -8,22 +8,23 @@ h1 {
     font-size: 40px;
     text-align: center;
     font-family: "Helvetica";
-    color: #313131;
-    letter-spacing: 2px;
+    color: #2B2C2D;
+    letter-spacing: 6px;
 }
 
 body {
     font-family: 'Ubuntu';
-    background: #FFD79F;
+    background: #F3F3F3;
 }
 
 textarea {
-    background-color: #ECECEC;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    color: #DDDDDD;
+    background-color: #2B2C2D;
     resize: none;
     display: block;
     margin: 5px auto;
-    font-family: 'Ubuntu';
-    font-size: 18px;
     height: 50px;
     max-width: 90%;
     border: none;
@@ -61,11 +62,11 @@ textarea:focus {
 .preset-button {
     margin: 10px 10px 0px 10px;
     padding: 10px;
-    background-color: #A8DADC;
+    background-color: #38CDFF;
 }
 
 #radio-buttons {
-    background-color: #E8C491;
+    background-color: #DDDDDD;
     text-align: center;
     margin-top: -20px;
     padding: 10px;
@@ -82,7 +83,7 @@ button {
     height: 70px;
     font-size: 16px;
     border-style: none;
-    background-color: #E84B56;
+    background-color: #FF69B4;
     -webkit-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s;
@@ -136,8 +137,8 @@ button:focus {
 table {
     border-collapse: collapse;
     text-align: center;
-    color: #313131;
-    background-color: #FFD79F;
+    color: #2B2C2D;
+    background-color: #F3F3F3;
     width: 35%;
     transition: all .3s;
 }
@@ -152,13 +153,13 @@ td {
 
 tr:first-child {
     font-family: "Helvetica";
-    background-color: #457B9D;
-    color: #ECECEC;
+    background-color: #38CDFF;
+    color: #2B2C2D;
     font-size: 24px;
 }
 
 tr:nth-child(even) {
-    background-color: #E8C491
+    background-color: #DDDDDD
 }
 
 .chartContainer {

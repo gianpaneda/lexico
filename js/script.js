@@ -143,15 +143,15 @@ window.onload = function() {
         function generateChart(id, data, title, chartType, tooltip) {
 
             CanvasJS.addColorSet("blueGreenShades", [ //colorSet Array
-                "#EC6F78",
-                "#FCAEB3",
-                "#A8DADC",
-                "#457B9D",
-                "#1D3557"
+                "#96FFE4",
+                "#38CDFF",
+                "#8C4DEA",
+                "#182B3A",
+                "#23A3A1"
             ]);
 
             let chart = new CanvasJS.Chart(id, {
-                backgroundColor: "#FFD79F",
+                backgroundColor: "#F3F3F3",
                 colorSet: "blueGreenShades",
                 theme: "theme5",
                 animationEnabled: "true",
@@ -190,11 +190,10 @@ window.onload = function() {
             document.getElementById('characterCountWithSpaces').innerHTML = "Character Count (including spaces): " + words.length;
             document.getElementById('characterCountNoSpaces').innerHTML = "Character Count (no spaces): " + wordStr.length;
             document.getElementById('averageLength').innerHTML = "Average Word Length: ~" + (wordStr.length / wordArr.length).toFixed(2);
-
             document.getElementById('lexicalDensity').innerHTML = "Lexical Density: " + ((wordArr.filter(filterCommonWords).length / wordArr.length) * 100).toFixed(2) + "%"
 
-            generateChart("wordLengths", wordCountData, "WORD LENGTH FREQUENCY", "pie", "{y} - #percent %");
-            generateChart("commonWords", topTwenty, "MOST USED WORDS", "bar");
+            generateChart("wordLengths", wordCountData, "word length frequency", "pie", "{y} - #percent %");
+            generateChart("commonWords", topTwenty, "most used words", "bar");
 
         }
 
@@ -216,10 +215,10 @@ window.onload = function() {
     }
 
     function transitionTextArea() {
-        document.getElementById("input").style.background = "#FCAEB3";
+        document.getElementById("input").style.background = "#2996BA";
 
         setTimeout(function() {
-            document.getElementById("input").style.background = "#ECECEC";
+            document.getElementById("input").style.background = "#2B2C2D";
         }, 400)
     }
 
