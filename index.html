@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <title>lexico: the text analyzer</title>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <title>Gian Paneda</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700|Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <h1><em>lexico</em></h1>
-
-    <textarea id="input" name="name" placeholder=" paste text here!" rows="8" cols="80"></textarea>
-
-    <div id="buttons">
-        <button id="preset1" class="preset-button" type="button" name="button">QUEEN - BOHEMIAN RHAPSODY</button>
-        <button id="preset2" class="preset-button" type="button" type="button " name="button">ARCTIC MONKEYS - CORNERSTONE</button>
-        <button id="preset3" class="preset-button" type="button" name="button">MLK JR.'S "I HAVE A DREAM " SPEECH</button>
-        <br>
-        <button id="analyze" type="button" name="button">analyze</button>
-    </div>
-
-
-    <div id="radio-buttons">
-        <div class="center-left-align">
-            <input id="" type="radio" name="toggleCommon" value="" checked> evaluate all words
-            <br>
-            <input id="removeCommonWords" type="radio" name="toggleCommon" value=""> filter non-lexical words
+    <section id="header-section">
+        <h1>GIAN <span class="p-fix">P</span>ANE<span class="d-fix">D</span>A</h1>
+        <h2 id="title"><em>FRONT-END DEVELOPER</em></h2>
+    </section>
+    <section id="project-section">
+        <h1 class="section-title">Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <h4><a href="projects/lexico.html">lexico</a></h4>
+                <p><em>Analyze any text</em></p>
+                <img src="img/lexico.jpg" alt="project image">
+            </div>
+            <div class="project">
+                <h4><a href="https://gianpaneda.github.io/twitch-clip-theater/">Twitch Theater</a></h4>
+                <p><em>Watch game clips</em></p>
+                <img src="img/lexico.jpg" alt="project image">
+            </div>
+            <div class="project">
+                <h4><a href="https://gianpaneda.github.io/tmdb-watchlist/">TMDb Watchlist</a></h4>
+                <p><em>Create a movie list</em></p>
+                <img src="img/lexico.jpg" alt="project image">
+            </div>
         </div>
-    </div>
-
-    <div id="stats-flex-container" class="stats">
-        <p id="lexicalDensity"> </p>
-        <p id="wordCount"> </p>
-        <p id="characterCountWithSpaces"></p>
-        <p id="characterCountNoSpaces"> </p>
-        <p id="averageLength"> </p>
-    </div>
-
-    <figure id="commonWords" class="chartContainer"></figure>
-    <figure id="uncommonWords" class="chartContainer"></figure>
-    <figure id="wordLengths" class="chartContainer"></figure>
-
-    <div id="table-flex-container">
-        <table id="rawData" class="table"></table>
-        <table id="uniqueWords" class="table"></table>
-    </div>
+        <div class="small-projects">
+            <h4><a href="https://gianpaneda.github.io/simon-game/">simon game</a></h4>
+            <h4><a href="https://gianpaneda.github.io/pomodoro-timer/">pomodoro timer</a></h4>
+            <h4><a href="https://gianpaneda.github.io/wiki-viewer/">wiki viewer</a></h4>
+        </div>
+    </section>
+    <section id="aboutme-section">
+        <h1 class="section-title">About Me</h1>
+        <div class="about">
+            <p>
+                Hi! I’m Gian and I’ve been learning web development and design through the internet, online courses, and working on projects. I have a passion for learning and I love to create.
+            </p>
+            <br>
+            <p>
+                My other interests include fitness, video games, nature, and art. Thanks for stopping by and feel free to contact me. :)
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>
