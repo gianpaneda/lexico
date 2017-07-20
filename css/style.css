@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto|Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 html, body {
     margin: 0;
     padding: 0;
@@ -7,13 +7,13 @@ html, body {
 h1 {
     font-size: 40px;
     text-align: center;
-    font-family: "Helvetica";
+    font-family: 'Helvetica', Arial, sans-serif;
     color: #2B2C2D;
     letter-spacing: 6px;
 }
 
 body {
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', Arial, sans-serif;
     background: #F3F3F3;
 }
 
